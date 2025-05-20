@@ -20,7 +20,7 @@
 
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/Home/HomePage";
-//import UserLogin from "../pages/Auth/UserLogin";
+import UserLogin from "../pages/Auth/UserLogin";
 //import PlannerLogin from "../pages/Auth/PlannerLogin";
 // Add other components as we go
 
@@ -28,7 +28,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="/user/login" element={<UserLogin />} /> */}
+      <Route path="/user/login" element={<UserLogin />} />
       {/* <Route path="/planner/login" element={<PlannerLogin />} /> */}
     </Routes>
   );
