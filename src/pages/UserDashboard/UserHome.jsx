@@ -1,14 +1,13 @@
-// src/pages/UserDashboard/UserDashboardLayout.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
 import UserSidebar from "../../components/User/UserSidebar";
 
 const UserDashboardLayout = () => {
   return (
-    <div style={{ display: "flex", height: "100%" }}>
+    <div style={{ display: "flex" }}>
       <UserSidebar />
       <div style={{ flex: 1, padding: "1rem" }}>
-        <Outlet /> {/* Dashboard pages render here */}
+        <Outlet />
       </div>
     </div>
   );

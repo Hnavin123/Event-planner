@@ -1,25 +1,26 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function UserLogin() {
+export default function PlannerLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === "user@example.com" && password === "123456") {
-      alert("Login successful!");
-      navigate("/user/dashboard");
+    // 👉 Add real validation or backend login logic here
+    if (email === "planner@example.com" && password === "123456") {
+      alert("Planner login successful!");
+      navigate("/planner/dashboard"); // Change this route once you have planner dashboard
     } else {
-      alert("Invalid credentials");
+      alert("Invalid planner credentials");
     }
   };
 
   return (
     <div className="flex justify-center items-center h-[80vh]">
       <form onSubmit={handleLogin} className="bg-white p-6 shadow-md rounded w-80">
-        <h2 className="text-2xl font-bold mb-4 text-center">User Login</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Planner Login</h2>
         <input
           type="email"
           placeholder="Email"
@@ -46,3 +47,4 @@ export default function UserLogin() {
     </div>
   );
 }
+
