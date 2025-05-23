@@ -63,7 +63,9 @@ const HomePage = () => {
         className="rounded-lg shadow-md mb-6 md:mb-0 md:mr-8 flex-shrink-0 w-full md:w-1/2 object-cover"
       />
       <div>
-        <h3 className="text-3xl font-bold text-blue-700 mb-4 tracking-wide">Generate Invitations</h3>
+        <h3 className="text-3xl font-bold text-blue-700 mb-4 tracking-wide">
+          <Link to="/generate-invitations" className="hover:underline">Generate Invitations</Link>
+        </h3>
         <p className="text-gray-700 text-lg leading-relaxed">
           Craft stunning digital invitations and manage RSVPs easily to keep your event organized and guests informed.
         </p>

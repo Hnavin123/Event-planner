@@ -13,6 +13,7 @@ import PlannerLogin from "../pages/Auth/PlannerLogin";
 import Planners from "../pages/Directory/Planners";
 import Contact from "../pages/Contact/Contact";
 import VendorSearch from "../pages/Directory/VendorSearch";
+import GenerateInvitations from "../pages/User/GenerateInvitations";
 
 export default function AppRoutes() {
   return (
@@ -33,6 +34,7 @@ export default function AppRoutes() {
         <Route path="planner-directory" element={<Planners />} />
         <Route path="contact" element={<Contact />} />
         <Route path="/vendor-search" element={<VendorSearch />} />
+        <Route path="/generate-invitations" element={<GenerateInvitations />} />
       </Route>
     </Routes>
   );
