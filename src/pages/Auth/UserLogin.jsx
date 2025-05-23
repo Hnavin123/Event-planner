@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../../Components/common/Navbar";
 
 export default function UserLogin() {
   const [email, setEmail] = useState("");
