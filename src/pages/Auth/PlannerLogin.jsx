@@ -8,10 +8,10 @@ export default function PlannerLogin() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // 👉 Add real validation or backend login logic here
+
     if (email === "planner@example.com" && password === "123456") {
       alert("Planner login successful!");
-      navigate("/planner/dashboard"); // Change this route once you have planner dashboard
+      navigate("/planner/dashboard");
     } else {
       alert("Invalid planner credentials");
     }
@@ -19,7 +19,10 @@ export default function PlannerLogin() {
 
   return (
     <div className="flex justify-center items-center h-[80vh]">
-      <form onSubmit={handleLogin} className="bg-white p-6 shadow-md rounded w-80">
+      <form
+        onSubmit={handleLogin}
+        className="bg-white p-6 shadow-md rounded w-80"
+      >
         <h2 className="text-2xl font-bold mb-4 text-center">Planner Login</h2>
         <input
           type="email"
@@ -47,4 +50,3 @@ export default function PlannerLogin() {
     </div>
   );
 }
-

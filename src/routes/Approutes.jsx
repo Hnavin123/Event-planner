@@ -40,14 +40,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "../Components/common/Layout";
@@ -87,7 +79,7 @@ export default function AppRoutes() {
 
         {/* User Dashboard (protected) */}
         <Route path="user/dashboard" element={<UserDashboardLayout />}>
-          <Route index element={<UserHome />} />
+          {/* <Route index element={<UserHome />} /> */}
           {/* <Route path="create-event" element={<CreateEvent />} />
           <Route path="events" element={<MyEvents />} />
           <Route path="cards" element={<Cards />} />

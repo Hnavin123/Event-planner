@@ -11,10 +11,10 @@ for (let i = 20; i <= 20; i++) {
   timeSlots.push(`8:00 PM`);
 }
 
-function formatTime(time) {
-  // Convert e.g. "10:00 AM" to 24h format if needed or just keep string
-  return time;
-}
+// function formatTime(time) {
+//   // Convert e.g. "10:00 AM" to 24h format if needed or just keep string
+//   return time;
+// }
 
 export default function ScheduleDemoFeature() {
   const [showCalendar, setShowCalendar] = useState(false);
@@ -52,7 +52,9 @@ export default function ScheduleDemoFeature() {
 
   return (
     <div className="bg-white bg-opacity-90 rounded-xl p-8 shadow-lg max-w-xl mx-auto text-center">
-      <h3 className="text-3xl font-bold text-blue-700 mb-4 tracking-wide">Schedule a Demo</h3>
+      <h3 className="text-3xl font-bold text-blue-700 mb-4 tracking-wide">
+        Schedule a Demo
+      </h3>
       <button
         className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full mb-6 transition duration-300"
         onClick={() => setShowCalendar(!showCalendar)}
